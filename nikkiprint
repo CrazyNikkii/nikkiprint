@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Add blank lines to push name art down (3 blank lines here)
 name_art=(
 $'\033[0m'
 $'\033[0m'
@@ -36,11 +35,11 @@ if [ ${#eagle_art[@]} -gt $max_lines ]; then
 fi
 
 for ((i=${#name_art[@]}; i<max_lines; i++)); do
-  name_art[i]=$'\033[0m'""  # pad bottom if needed
+  name_art[i]=$'\033[0m'""
 done
 
 for ((i=${#eagle_art[@]}; i<max_lines; i++)); do
-  eagle_art[i]=$'\033[0m'""  # pad bottom if needed
+  eagle_art[i]=$'\033[0m'""
 done
 
 for ((i=0; i<max_lines; i++)); do
